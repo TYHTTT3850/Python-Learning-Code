@@ -1,3 +1,4 @@
+# 元组不可更改
 tuple1 = (1,2,3,4,5,6,7,8,9)
 tuple_single = (1,) #single element tuple。加逗号表示其为元组，否则数据类型不为元组。
 
