@@ -28,3 +28,4 @@ print(list_cut7)
 print(list_cut8)
 print(list_cut9)
 print(list_cut10)
+# 元组和字符串也一样
