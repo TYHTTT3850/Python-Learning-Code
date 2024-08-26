@@ -24,8 +24,9 @@ print(f"list1列表修改为：{list1}")
 del list1[5]
 print(f"list1列表修改为：{list1}")
 
-# pop方法，删除对应索引位置元素。列表名.pop(索引)
-list1.pop(11)
+# pop方法，删除对应索引位置元素，返回删除元素的值。列表名.pop(索引)
+pop_element = list1.pop(11)
+print(f"取出元素为{pop_element}")
 print(f"list1列表修改为：{list1}")
 
 # remove方法，删除指定元素(列表中的第一个匹配项)。列表名.remove(指定元素)
