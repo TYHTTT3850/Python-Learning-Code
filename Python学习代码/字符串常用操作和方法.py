@@ -1,3 +1,4 @@
+# 字符串不可更改
 string1 = "hello world"
 
 # 字符串索引
