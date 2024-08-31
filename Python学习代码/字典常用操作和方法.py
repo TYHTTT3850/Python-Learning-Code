@@ -1,18 +1,18 @@
 dictionary1 = {"key1":1,"key2":2,"key3":3}
-dictionary2 = {"键值1":1,"键值2":2,"键值2":3} #重复键值的字典，后面的值覆盖前面的
+dictionary2 = {"键名1":1,"键名2":2,"键名2":3} #有重复键名的字典，后面的值覆盖前面的
 dictionary3 = {1:'a',2:'b',3:'c'}
 dictionary_empty1 = {} #空字典1
 dictionary_empty2 = dict() #空字典2
 print(dictionary1,dictionary2,dictionary3,sep=" ; ")
 
-# 字典索引。字典名[键值]
-print(dictionary1["key1"],dictionary2["键值2"],dictionary3[1],sep=" ; ")
+# 字典索引。字典名[键名]
+print(dictionary1["key1"],dictionary2["键名2"],dictionary3[1],sep=" ; ")
 
-# 增加元素。字典名[不存在的键值]
+# 增加元素。字典名[不存在的键名]
 dictionary1["key4"] = 4
 print(dictionary1)
 
-# 修改元素。字典名[存在的键值] = 新值
+# 修改元素。字典名[存在的键名] = 新值
 dictionary1["key1"] = 0
 print(dictionary1)
 
@@ -24,7 +24,7 @@ print(dictionary1,pop_value,sep = " ; ")
 dictionary1.clear()
 print(dictionary1)
 
-# keys方法，获取字典全部key值。字典名.keys()
+# keys方法，获取字典全部键名。字典名.keys()
 dictionary3_keys = dictionary3.keys()
 print(dictionary3_keys)
 
