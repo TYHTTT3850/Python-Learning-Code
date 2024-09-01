@@ -22,9 +22,9 @@ user_info2("Marry",gender="Female",age=23)
 print()
 
 # 不定长参数(可变参数)，不确定调用时传递几个参数(不传参也可以)
-def test_args(*args): # 位置不定长，*args可以改成其他名字
+def test_args(*args): # 位置不定长，*表示标记形参为位置不定长，形参名args可以改成其他名字
     print(f"args类型为：{type(args)},内容是：{args}")
 test_args("Jack","Marry","Jhon",11,22,33)
-def test_kwargs(**kwargs): # 关键字不定长，**kwargs可以改成其他名字
+def test_kwargs(**kwargs): # 关键字不定长，**表示标记形参为关键字不定长，形参名kwargs可以改成其他名字
     print(f"kwargs类型为：{type(kwargs)},内容是：{kwargs}")
 test_kwargs(name="Marry",age=23,gender="Female")
