@@ -17,7 +17,6 @@ line.set_global_opts(
     legend_opts=LegendOpts(is_show=True),#图例配置
     toolbox_opts=ToolboxOpts(is_show=True),#工具箱配置
     visualmap_opts=VisualMapOpts(is_show=True),#视觉映射配置
-    tooltip_opts=TooltipOpts(is_show=True)
 )
 line.render("Pyecharts基础折线图.html")
 
