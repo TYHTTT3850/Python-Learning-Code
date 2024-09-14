@@ -1,11 +1,12 @@
 import numpy as np
 # 高斯消元法
-def gauss1(A,b,n):
+def gauss1(A,b):
+    n = len(b)
     for i in range(n): #消元
         for j in range(i+1,n):
             m = A[j][i]/A[i][i]
             A[j] = A[j] - m*A[i]
-            b[j] = b[j] - m*b[i] 
+            b[j] = b[j] - m*b[i]
     print(A)
     print(b)
     if A[n - 1][n - 1] == 0: #求解
@@ -19,6 +20,5 @@ def gauss1(A,b,n):
     print(x)
 A = np.array([[1,0,0],[2,2,2],[4,4,5]])
 b = np.array([[2],[5],[9]])
-n = 3
-x = np.zeros((n,1))
-gauss1(A,b,n)
+x = np.zeros((len(b),1))
+gauss1(A,b)
