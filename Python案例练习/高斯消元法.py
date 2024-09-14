@@ -1,14 +1,14 @@
 import numpy as np
 # 高斯消元法
 def gauss1(A,b,n):
-    for i in range(n):
+    for i in range(n): #消元
         for j in range(i+1,n):
             m = A[j][i]/A[i][i]
             A[j] = A[j] - m*A[i]
-            b[j] = b[j] - m*b[i] #消元
+            b[j] = b[j] - m*b[i] 
     print(A)
     print(b)
-    if A[n - 1][n - 1] == 0: # 求解
+    if A[n - 1][n - 1] == 0: #求解
         print("无解")
     else:
         x[n - 1] = b[n - 1] / A[n - 1][n - 1]
