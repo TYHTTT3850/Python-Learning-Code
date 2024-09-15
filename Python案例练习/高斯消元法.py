@@ -18,7 +18,7 @@ def gauss1(A,b):
             s = A[k,k + 1:] @ x[k + 1:]
             x[k] = (b[k] - s) / A[k,k]
     print(x)
-A = np.array([[1,0,0],[2,2,2],[4,4,5]])
-b = np.array([[2],[5],[9]])
-x = np.zeros((len(b),1))
+A = np.array([[1,0,0],[2,2,2],[4,4,5]],dtype=np.float64)
+b = np.array([[2],[5],[9]],dtype=np.float64)
+x = np.zeros((len(b),1),dtype=np.float64)
 gauss1(A,b)
