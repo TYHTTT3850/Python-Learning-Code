@@ -1,5 +1,6 @@
 # 定义类。class 类名称：类的属性 类的行为
 class student:
+    # 定义成员变量并赋予默认值None(空或缺失)
     name = None
     age = None
     # 定义方法。def 方法名(self,形参1,...,形参N)
