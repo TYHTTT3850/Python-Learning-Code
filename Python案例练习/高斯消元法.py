@@ -13,7 +13,6 @@ def gauss1(A,b):
         print("无解")
     else:
         x[n - 1] = b[n - 1] / A[n - 1,n - 1]
-        print(x[n - 1])
         for k in range(n - 2, -1, -1):
             s = A[k,k + 1:] @ x[k + 1:]
             x[k] = (b[k] - s) / A[k,k]
