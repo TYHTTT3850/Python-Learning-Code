@@ -14,7 +14,7 @@ class student:
 stu1 = student()
 stu2 = student()
 
-# 修改成员变量
+# 修改成员变量的值
 stu1.name = "Mike"
 stu2.name = "Marry"
 stu1.age = 13
