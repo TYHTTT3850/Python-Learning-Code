@@ -23,6 +23,7 @@ with open("文件常用操作和方法.txt","r",encoding="UTF-8") as file1:
 
 # 文件写入"w"。若文件不存在，则创建文件。若文件已存在，则删除原有内容在进行写入。
 file2 = open("文件写入和追加.txt", "w", encoding="UTF-8")
+
 # write方法。文件对象名.write(写入内容)，调用时内容并未真正写入，而是在程序内存中。
 file2.write("Hello World")
 # flush方法。文件对象名.flush()，刷新文件内容。
