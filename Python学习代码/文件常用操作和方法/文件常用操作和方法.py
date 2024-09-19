@@ -5,14 +5,19 @@
 file1 = open("文件常用操作和方法.txt", "r", encoding="UTF-8") #file为文件对象名。
 print(type(file1))
 print()
+
 #文件读取"r"。读取文件时有文件指针，每次读取会从上次读取的结尾处开始读取!!
+
 # read方法。文件对象名.read(读取的数据长度)，不传参即为读取所有数据。
 print(f"读取十个长度的内容：{file1.read(10)}")
 print(f"读取全部内容：{file1.read()}")
 
 # readlines方法。文件对象名.readlines()，按照行的方式一次性读取文件内容，返回一个列表。
+
 # readline方法。文件对象名.readline()，一次读取一行内容。
+
 # for循环读取。for line in 文件对象名。一次循环读取一行内容。
+
 # close方法。文件对象名.close()
 file1.close()
 
