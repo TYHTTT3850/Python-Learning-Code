@@ -26,6 +26,7 @@ file2 = open("文件写入和追加.txt", "w", encoding="UTF-8")
 
 # write方法。文件对象名.write(写入内容)，调用时内容并未真正写入，而是在程序内存中。
 file2.write("Hello World")
+
 # flush方法。文件对象名.flush()，刷新文件内容。
 file2.flush()
 file2.close() # close方法内置flush方法。
