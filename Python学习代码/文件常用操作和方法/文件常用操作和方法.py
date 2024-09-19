@@ -12,7 +12,7 @@ print()
 print(f"读取十个长度的内容：{file1.read(10)}")
 print(f"读取全部内容：{file1.read()}")
 
-# readlines方法。文件对象名.readlines()，按照行的方式一次性读取文件内容，返回一个列表。
+# readlines方法。文件对象名.readlines()，按照行的方式一次性读取文件内容，返回一个列表，列表元素为每行的内容。
 
 # readline方法。文件对象名.readline()，一次读取一行内容，返回的数据类型为字符串。
 
