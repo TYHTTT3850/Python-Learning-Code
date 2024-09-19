@@ -4,7 +4,7 @@
 from pyecharts.charts import Bar
 from pyecharts.options import LabelOpts
 from pyecharts.charts import Timeline # 时间线包
-from pyecharts.globals import ThemeType # 主图设置包
+from pyecharts.globals import ThemeType # 主题设置包
 bar1 = Bar()
 bar2 = Bar()
 bar1.add_xaxis(xaxis_data=["a国","b国","c国"])
