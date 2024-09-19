@@ -14,7 +14,7 @@ print(f"读取全部内容：{file1.read()}")
 
 # readlines方法。文件对象名.readlines()，按照行的方式一次性读取文件内容，返回一个列表。
 
-# readline方法。文件对象名.readline()，一次读取一行内容。
+# readline方法。文件对象名.readline()，一次读取一行内容，返回的数据类型为字符串。
 
 # for循环读取。for line in 文件对象名。一次循环读取一行内容。
 
