@@ -36,7 +36,7 @@ student3 = Student("Jhon",36)
 
 """__str__方法演示：打印对象或将对象转换为字符串时会被调用。"""
 print(student1) # 若不提供__str__方法则会输出内存地址
-str1 = str(student1) # 若不提供__str__方法则str位一串内存地址
+str1 = str(student1) # 若不提供__str__方法则str1为一串内存地址
 print(str1)
 
 """ __lt__方法演示：在对象之间进行大于和小于比较时会被调用。"""
