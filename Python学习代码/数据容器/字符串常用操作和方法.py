@@ -6,7 +6,7 @@ s1 = string1[0]
 s2 = string1[-5]
 print(s1,s2)
 
-# index方法，查找某字符串第一个字的索引。字符串名.index(字符串)
+# index方法，查找某字符串中第一个字第一次出现的索引。字符串名.index(字符串)
 print(string1.index("world"))
 
 # replace方法，将字符串1的内容替换为字符串2并返回新的字符串。字符串名.replace(字符串1，字符串2)
