@@ -6,7 +6,7 @@ def Choleskey(A,b):
     L = np.zeros([n,n])
 
     # 求L
-    L[0,0] = np.sqrt(A[0,0])
+    L[0,0] = np.sqrt(A[0,0]) # 处理第一列
     for l in range(1,n):
         L[l,0] = A[l,0]/L[0,0]
 
