@@ -6,9 +6,10 @@ def Choleskey(A,b):
     L = np.zeros([n,n])
 
     # 求L
-    L[0,0] = np.sqrt(A[0,0]) # 处理第一列
-    L[1,0] = A[1,0]/L[0,0]
-    L[2,0] = A[2,0]/L[0,0]
+    L[0,0] = np.sqrt(A[0,0])
+    for l in range(1,n):
+        L[l,0] = A[l,0]/L[0,0]
+
     for r in range(1,n): # 处理余下的列
         L[r,r] = np.sqrt(A[r,r]-np.dot(L[r,:r],L[r,:r].T)) # 处理主对角线上的元素
         for j in range(r+1,n):
