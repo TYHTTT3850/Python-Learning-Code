@@ -23,6 +23,7 @@ def Cholesky(A,b):
     x[n - 1] = y[n - 1] / L_T[n - 1, n - 1]
     for k in range(n - 2, -1, -1):
         x[k, 0] = (y[k, 0] - np.dot(L_T[k, k + 1:], x[k + 1:, 0])) / L_T[k, k]
+    print(L)
     print(x)
 
 A = np.array([[1,-1,4,-2,3],
