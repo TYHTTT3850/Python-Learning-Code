@@ -2,7 +2,7 @@
 # file_path:同一文件夹下只需要文件名，否则需要绝对路径。
 # mode:只读r；写入w；追加a；读写r+，w+，a+。
 # encoding:编码方式。UTF-8，GBK等。
-file1 = open("文件常用操作和方法.txt", "r", encoding="UTF-8") #file为文件对象名。
+file1 = open("txt文件常用操作和方法.txt", "r", encoding="UTF-8") #file为文件对象名。
 print(type(file1))
 print()
 
@@ -22,12 +22,12 @@ print(f"读取全部内容：{file1.read()}")
 file1.close()
 
 # with open():语句，语句内操作执行完后自动关闭文件。
-with open("文件常用操作和方法.txt","r",encoding="UTF-8") as file1:
+with open("txt文件常用操作和方法.txt","r",encoding="UTF-8") as file1:
     for line in file1:
         print(line)
 
 # 文件写入"w"。若文件不存在，则创建文件。若文件已存在，则删除原有内容在进行写入。
-file2 = open("文件写入和追加.txt", "w", encoding="UTF-8")
+file2 = open("txt文件写入和追加.txt", "w", encoding="UTF-8")
 
 # write方法。文件对象名.write(写入内容)，调用时内容并未真正写入，而是在程序内存中。
 file2.write("Hello World")
