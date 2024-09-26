@@ -14,7 +14,7 @@ bar2.add_yaxis(series_name="GDP",y_axis=[50,40,30])
 bar1.reversal_axis()
 bar2.reversal_axis()
 
-# 创建时间线对象并设置主题。主题设置同样适用于其他图标
+# 创建时间线对象并设置主题。主题设置同样适用于其他图表
 timeline = Timeline({"theme":ThemeType.LIGHT})
 timeline.add(bar1,"2021年GDP")
 timeline.add(bar2,"2022年GDP")
