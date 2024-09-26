@@ -48,9 +48,3 @@ pip install -U 包名
 ```cmd
 pip install -U pip
 ```
-
-升级python
-
-```cmd
-pip install -U python
-```
