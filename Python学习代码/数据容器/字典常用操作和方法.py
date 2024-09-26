@@ -28,6 +28,10 @@ print(dictionary1)
 dictionary3_keys = dictionary3.keys()
 print(dictionary3_keys)
 
+#values方法，获取字典全部值。字典名.values()
+dictionary3_values = dictionary3.values()
+print(dictionary3_values)
+
 # 统计字典元素数量。len(字典名)
 length = len(dictionary2)
 print(length)
