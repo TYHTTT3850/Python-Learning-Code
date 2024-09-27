@@ -1,4 +1,4 @@
-# MySQL基础命令
+# MySQL命令行基础命令
 
 进入MySQL环境
 
