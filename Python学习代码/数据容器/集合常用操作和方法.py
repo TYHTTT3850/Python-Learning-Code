@@ -42,7 +42,7 @@ print(set6,set7,set8,set6|set7)
 set9 = set6.intersection(set7)
 print(set6,set7,set9,set6&set7)
 
-# symmetric_difference，求两个集合的对称差，得到新集合，不改变原集合。集合名1.symmetric_difference(集合名2)=集合名1^集合名2
+# symmetric_difference方法，求两个集合的对称差，得到新集合，不改变原集合。集合名1.symmetric_difference(集合名2)=集合名1^集合名2
 set10 = set6.symmetric_difference(set7)
 print(set6,set7,set10,set6^set7)
 
