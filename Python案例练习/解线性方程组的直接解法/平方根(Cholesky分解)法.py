@@ -1,8 +1,6 @@
 import numpy as np
 def Cholesky(A,b):
     n = len(b)
-    for i in range(n): # 取A的下三角形部分
-        A[0:i,i] = 0
     L = np.zeros([n,n])
 
     # 求L
