@@ -33,7 +33,7 @@ cursor.execute("insert into student values(10001,'Mike',31,'男'),(10002,'Jack',
 conn.commit()
 
 # 执行SQL查询语句
-cursor.execute("select * from student") # 执行SQL查询语句
+cursor.execute("select * from student")
 results = cursor.fetchall() # 将得到的查询结果封装到元组内
 print(results)
 
