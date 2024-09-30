@@ -26,6 +26,8 @@ def gauss2(A,b):
         x[n - 1, 0] = b[n - 1, 0] / A[n - 1, n - 1]
         for k in range(n - 2, -1, -1):
             x[k, 0] = (b[k, 0] - np.dot(A[k, k + 1:] , x[k + 1:, 0])) / A[k, k]
+    print(A)
+    print(b)
     print(x)
 A = np.array([[0.00000001,2,3],[-1,3.712,4.623],[-2,1.072,5.643]])
 b = np.array([[1],[2],[3]],dtype=np.float64)
