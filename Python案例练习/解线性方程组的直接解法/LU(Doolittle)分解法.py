@@ -22,6 +22,8 @@ def Doolittle(A,b):
     x[n - 1] = y[n - 1] / U[n - 1, n - 1]
     for k in range(n - 2, -1, -1):
         x[k,0] = (y[k,0] - np.dot(U[k, k + 1:],x[k + 1:,0])) / U[k, k]
+    print(L)
+    print(U)
     print(x)
 
 A = np.array([[2,10,0,-3],[-3,-4,-12,13],[1,2,3,-4],[4,14,9,-13]])
