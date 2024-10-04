@@ -17,7 +17,7 @@ def gauss1(A,b):
         x = np.zeros([n,1])
         x[n - 1] = b[n - 1] / A[n - 1,n - 1]
         for k in range(n - 2, -1, -1):
-            x[k] = (b[k] -np.dot(A[k,k + 1:],x[k + 1:])) / A[k,k]
+            x[k] = (b[k] -A[k,k + 1:]@x[k + 1:]) / A[k,k]
     print(A)
     print(b)
     print(x)
