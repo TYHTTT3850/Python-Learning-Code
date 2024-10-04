@@ -16,13 +16,12 @@ print(f"读取全部内容：{file1.read()}")
 
 # readline方法。文件对象名.readline()，一次读取一行内容，返回的数据类型为字符串。
 
-# for循环读取。for line in 文件对象名。一次循环读取一行内容。
-
 # close方法。文件对象名.close()
 file1.close()
 
 # with open():语句，语句内操作执行完后自动关闭文件。
 with open("txt文件常用操作和方法.txt","r",encoding="UTF-8") as file1:
+# for循环读取。for line in 文件对象名。一次循环读取一行内容。    
     for line in file1:
         print(line)
 
