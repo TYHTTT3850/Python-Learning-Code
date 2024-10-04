@@ -8,20 +8,20 @@ def Doolittle(A,b):
     L[1:,0] = A[1:,0]/U[0,0]
     for r in range(1,n):
         for i in range(r,n):
-            U[r,i] = A[r,i] - np.dot(L[r,:r],U[:r,i])
-            L[i,r] = (A[i,r]-np.dot(L[i,:r],U[:r,r]))/U[r,r]
+            U[r,i] = A[r,i] - L[r,:r]@U[:r,i]
+            L[i,r] = (A[i,r]-L[i,:r]@U[:r,r])/U[r,r]
 
     # 求解Ly = b
     y = np.zeros([n,1])
     y[0,0] = b[0,0]
     for i in range(1,n):
-        y[i,0] = b[i,0] - np.dot(L[i,:i],y[:i,0])
+        y[i,0] = b[i,0] - L[i,:i]@y[:i,0]
 
     # 求解Ux = y
     x = np.zeros([n,1])
     x[n - 1] = y[n - 1] / U[n - 1, n - 1]
     for k in range(n - 2, -1, -1):
-        x[k,0] = (y[k,0] - np.dot(U[k, k + 1:],x[k + 1:,0])) / U[k, k]
+        x[k,0] = (y[k,0] - U[k, k + 1:]@x[k + 1:,0]) / U[k, k]
     print(L)
     print(U)
     print(x)
