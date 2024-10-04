@@ -18,7 +18,7 @@ string2 = "HELLO WORLD hello world"
 string2_list = string2.split(" ") #空格为分隔符
 print(f"{string2}以空格为分隔符分割后得到{string2_list}")
 
-# strip方法，去除字符串首尾指定字符，默认空格。字符串名.strip(指定字符)
+# strip方法，去除字符串首尾指定字符，默认删除空白字符。字符串名.strip(指定字符)
 string3 = "   hello world  "
 string4 = "123hello123 321world321"
 print(string3.strip()) #默认删除空格
