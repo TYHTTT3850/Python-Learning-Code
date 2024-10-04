@@ -21,7 +21,7 @@ file1.close()
 
 # with open():语句，语句内操作执行完后自动关闭文件。
 with open("txt文件常用操作和方法.txt","r",encoding="UTF-8") as file1:
-# for循环读取。for line in 文件对象名。一次循环读取一行内容。    
+    # for循环读取。for line in 文件对象名。一次循环读取一行内容。    
     for line in file1:
         print(line)
 
