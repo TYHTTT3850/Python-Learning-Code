@@ -30,12 +30,15 @@ stu2.name = "Marry"
 stu1.age = 13
 stu2.age = 14
 
-# 调用成员变量
+# 调用成员变量。对象名.属性名
 print(stu1.name,stu2.name,sep=" , ")
 print(stu1.age,stu2.age,sep=" , ")
 
-# 调用成员方法
+# 调用成员方法。对象名.方法名(实参)
 stu1.SayHello1()
 stu2.SayHello1()
 stu1.SayHello2("aaaaaa") #调用方法时无需理会self
 stu1.SayHello2("bbbbbb") #调用方法时无需理会self
+"""
+区别成员变量和成员方法：调用时是否有(),成员变量没有，成员方法有
+"""
