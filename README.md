@@ -59,3 +59,5 @@ pip install -U pip
 库Library：几个包的集合
 
 框架Framework：Python库的集合
+
+模块$\subset$包
