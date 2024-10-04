@@ -51,7 +51,11 @@ pip install -U pip
 ```
 
 ## Python模块、包、库、框架的区别和联系
+
 模块Module：后缀为.py的文件(就是Pyhton代码文件)，里面定义了函数，类等，可以将自己常用的函数或者类等等写入其中，需要时通过import语句导入。
+
 包Package：几个模块的集合
+
 库Library：几个包的集合
+
 框架Framework：Python库的集合
