@@ -1,4 +1,3 @@
-# Python-Learning-code
 ## pip工具常用操作指令
 
 显示所有已安装的库。
