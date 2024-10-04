@@ -5,22 +5,22 @@ def Cholesky(A,b):
 
     # 求L
     for r in range(0,n):
-        L[r,r] = np.sqrt(A[r,r]-np.dot(L[r,:r],L[r,:r].T)) # 处理主对角线上的元素
+        L[r,r] = np.sqrt(A[r,r]-L[r,:r]@L[r,:r].T) # 处理主对角线上的元素
         for j in range(r+1,n):
-            L[j,r] = (A[j,r] - np.dot(L[j,:r],L[r,:r].T))/L[r,r]
+            L[j,r] = (A[j,r] - L[j,:r]@L[r,:r].T)/L[r,r]
 
     # 求Ly = b
     y = np.zeros([n,1])
     y[0,0] = b[0,0]/L[0,0]
     for i in range(1,n):
-        y[i,0] = (b[i,0] - np.dot(L[i,:i], y[:i,0]))/L[i, i]
+        y[i,0] = (b[i,0] - L[i,:i]@ y[:i,0])/L[i, i]
 
     # 求(L^T)x = y
     L_T = L.T
     x = np.zeros([n,1])
     x[n - 1] = y[n - 1] / L_T[n - 1, n - 1]
     for k in range(n - 2, -1, -1):
-        x[k,0] = (y[k,0] - np.dot(L_T[k,k + 1:],x[k + 1:,0]))/L_T[k,k]
+        x[k,0] = (y[k,0] - L_T[k,k + 1:]@x[k + 1:,0])/L_T[k,k]
     print(L)
     print(x)
 
