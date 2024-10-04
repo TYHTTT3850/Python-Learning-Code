@@ -13,7 +13,7 @@ def Cholesky(A,b):
     y = np.zeros([n,1])
     y[0,0] = b[0,0]/L[0,0]
     for i in range(1,n):
-        y[i,0] = (b[i,0] - L[i,:i]@ y[:i,0])/L[i, i]
+        y[i,0] = (b[i,0] - L[i,:i]@y[:i,0])/L[i, i]
 
     # 求(L^T)x = y
     L_T = L.T
