@@ -1,6 +1,6 @@
 """
-numpy扩展库提供两种基本的类: ndarray(n-dimensional-array)，存储单一数据类型的多维数组。
-                         ufunc(universal function)，能够对数组进行处理的通用函数。
+numpy库两个基本的类: 1、ndarray(n-dimensional-array)，存储单一数据类型的多维数组。
+                    2、ufunc(universal function)，能够对数组进行处理的通用函数。
 """
 import numpy as np
 
