@@ -9,7 +9,7 @@ def Choose_Sort_Value(element):
     return element[1]
 
 # 读取数据
-file = open("1960-2019全球GDP数据.csv","r",encoding="GB2312")
+file = open("1960-2019全球GDP数据.csv","r",encoding="utf-8")
 data_lines = file.readlines() # 一行一行读取
 del data_lines[0] # 删除第一行无用数据
 
