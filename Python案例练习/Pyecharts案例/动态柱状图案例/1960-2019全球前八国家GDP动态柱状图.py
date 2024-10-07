@@ -41,7 +41,10 @@ for key in sorted_keys:
     bar.add_xaxis(xaxis_data=x[::-1])
     bar.add_yaxis(series_name="全球前8国家GDP(亿)",y_axis=y[::-1],label_opts=LabelOpts(position="right"))
     bar.reversal_axis()
-    timeline.add(bar,key+"年GDP")
+    bar.set_global_opts(
+        title_opts=TitleOpts(title=key+"年全球前8国家GDP", pos_left="center", pos_top="5%")
+    )
+    timeline.add(bar,key+"年")
 
 # 设置自动播放
 timeline.add_schema(
