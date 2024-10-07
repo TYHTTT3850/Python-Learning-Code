@@ -2,7 +2,7 @@
 from pyecharts.charts import Bar
 from pyecharts.charts import Timeline
 from pyecharts.globals import ThemeType
-from pyecharts.options import LabelOpts
+from pyecharts.options import *
 
 # 排序依据函数
 def Choose_Sort_Value(element):
