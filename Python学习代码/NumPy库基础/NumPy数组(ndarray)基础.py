@@ -6,7 +6,7 @@ import numpy as np
 
 """--------------------数组创建--------------------"""
 print("--------------------数组创建--------------------")
-# array方法。
+# array()方法。
 a = np.array([1,2,3,4,5,6]) #一维数组
 b = np.array([[1,2,3],[4,5,6]],dtype=np.float64) #二维数组，并指定数据类型为双精度浮点
 print(a,b,sep='\n')
@@ -64,12 +64,12 @@ x = np.array([[1,2,3],[4,5,6],[7,8,9]])
 x[2,0] = -1
 print(x)
 
-# delete方法
+# delete()方法
 y = np.delete(x,2,axis=0) #删除第三行
 z = np.delete(x,2,axis=1) #删除第三列
 print(y,z,sep='\n')
 
-# append方法
+# append()方法
 t1 = np.append(x,[[10,11,12]],axis=0) #沿垂直方向增加一行
 t2 = np.append(x,[[10],[11],[12]],axis=1) #沿水平方向增加一列
 print(t1,t2,sep='\n',end="\n\n")
@@ -79,20 +79,20 @@ print("--------------------数组变形--------------------")
 a = np.arange(1,11) #生成1-10的一维数组
 print(a)
 
-# reshape方法，ndarray类方法。返回变形后的新数组，不改变原数组。
+# reshape()方法，ndarray类方法。返回变形后的新数组，不改变原数组。
 b = a.reshape(2,-1) #填入-1表示自动计算变形成两行后有几列
 print(a,b,sep='\n')
 
-# resize方法，ndarray类方法。没有返回值，直接改变数组本身。
+# resize()方法，ndarray类方法。没有返回值，直接改变数组本身。
 a.resize(2,5)
 print(a)
 
-# transpose方法，ndarray类方法。数组转置，返回转置后的新数组，不改变原数组。
+# transpose()方法，ndarray类方法。数组转置，返回转置后的新数组，不改变原数组。
 b = a.transpose()
 c = a.T #等同于a.transpose()
 print(a,b,c,sep='\n')
 
-# flatten方法，ndarray类方法。返回水平展开后的新数组，不改变原数组。
+# flatten()方法，ndarray类方法。返回水平展开后的新数组，不改变原数组。
 d = a.flatten()
 print(a,d,sep='\n',end='\n\n')
 
@@ -101,15 +101,15 @@ print("--------------------数组组合--------------------")
 a = np.array([[0,1,2],[3,4,5],[6,7,8]])
 b = np.array([[9,10,11],[12,13,14],[15,16,17]])
 
-# hstack方法。沿水平方向组合数组,传入参数为元组，返回数组。
+# hstack()方法。沿水平方向组合数组,传入参数为元组，返回数组。
 h = np.hstack((a,b))
 print(h)
 
-# vstack方法。沿垂直方向组合数组,传入参数为元组，返回数组。
+# vstack()方法。沿垂直方向组合数组,传入参数为元组，返回数组。
 v = np.vstack((a,b))
 print(v)
 
-# dstack方法。沿深度方向组合数组,传入参数为元组,返回数组。
+# dstack()方法。沿深度方向组合数组,传入参数为元组,返回数组。
 d = np.dstack((a,b))
 print(d,end="\n\n")
 
@@ -117,15 +117,15 @@ print(d,end="\n\n")
 print("--------------------数组分割--------------------")
 a = np.array([[1,2,3],[4,5,6],[7,8,9]])
 
-# hsplit方法。沿水平方向分割，返回数组列表。
+# hsplit()方法。沿水平方向分割，返回数组列表。
 h:list[np.ndarray] = np.hsplit(a,3) #等分为三个3×1数组
 print(h)
 
-# vsplit方法。沿垂直方向分割，返回数组列表。
+# vsplit()方法。沿垂直方向分割，返回数组列表。
 v:list[np.ndarray] = np.vsplit(a,3) #等分为三个1×3数组
 print(v)
 
-# dsplit方法。沿深度方向分割，返回数组列表。
+# dsplit()方法。沿深度方向分割，返回数组列表。
 b = np.array([[[0,1,2],[3,4,5],[6,7,8]],[[9,10,11],[12,13,14],[15,16,17]]])
 d:list[np.ndarray] = np.dsplit(b,3) #等分为三个2×3×1数组
 print(d,end="\n\n")
