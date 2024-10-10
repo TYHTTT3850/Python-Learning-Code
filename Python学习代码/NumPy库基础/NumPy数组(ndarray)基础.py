@@ -24,19 +24,19 @@ print(a,b,c,d,e,f,g,sep='\n',end='\n\n')
 """--------------------数组属性--------------------"""
 print("--------------------数组属性--------------------")
 a = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15]])
-# ndim，ndarray类属性。返回数组的维数。
+# ndim，ndarray类的属性。返回数组的维数。
 print("维数：",a.ndim)
 
-# shape，ndarray类属性。数组的尺寸，封装在元组内，二维m×n的数组为(m,n)，高维也类似。
+# shape，ndarray类的属性。数组的尺寸，封装在元组内，二维m×n的数组为(m,n)，高维也类似。
 print("尺寸：",a.shape)
 
-# size，ndarray类属性。数组的元素总数
+# size，ndarray类的属性。数组的元素总数
 print("元素总数：",a.size)
 
-# dtype，ndarray类属性。数组的数据类型
+# dtype，ndarray类的属性。数组的数据类型
 print("数据类型",a.dtype)
 
-# itemsize，ndarray类属性。数组每个元素占用的空间大小
+# itemsize，ndarray类的属性。数组每个元素占用的空间大小
 print("每个元素占用的空间大小：",a.itemsize,end="\n\n")
 
 """--------------------数组索引--------------------"""
@@ -79,20 +79,20 @@ print("--------------------数组变形--------------------")
 a = np.arange(1,11) #生成1-10的一维数组
 print(a)
 
-# reshape()方法，ndarray类方法。返回变形后的新数组，不改变原数组。
+# reshape()方法，ndarray类的方法。返回变形后的新数组，不改变原数组。
 b = a.reshape(2,-1) #填入-1表示自动计算变形成两行后有几列
 print(a,b,sep='\n')
 
-# resize()方法，ndarray类方法。没有返回值，直接改变数组本身。
+# resize()方法，ndarray类的方法。没有返回值，直接改变数组本身。
 a.resize(2,5)
 print(a)
 
-# transpose()方法，ndarray类方法。数组转置，返回转置后的新数组，不改变原数组。
+# transpose()方法，ndarray类的方法。数组转置，返回转置后的新数组，不改变原数组。
 b = a.transpose()
 c = a.T #等同于a.transpose()
 print(a,b,c,sep='\n')
 
-# flatten()方法，ndarray类方法。返回水平展开后的新数组，不改变原数组。
+# flatten()方法，ndarray类的方法。返回水平展开后的新数组，不改变原数组。
 d = a.flatten()
 print(a,d,sep='\n',end='\n\n')
 
