@@ -23,11 +23,11 @@ print("--------------------序列属性--------------------")
 s1 = pd.Series(np.array([10.5,20.5,30.5]))
 s2 = pd.Series(np.array([10.5,20.5,30.5]),index=['a','b','c'])
 
-# index，Series类属性。返回序列所有的行标签。
+# index，Series类的属性。返回序列所有的行标签。
 print(s1.index,end="\n--------------\n") #不指定行标签时，默认是从0开始的下标
 print(s2.index,end="\n--------------\n") #指定了行标签时，输出指定的行标签
 
-# values，Series类属性。返回序列中所有的值(封装在numpy.ndarray中)。
+# values，Series类的属性。返回序列中所有的值(封装在numpy.ndarray中)。
 print(s1.values,end="\n--------------\n")
 print(s2.values,end="\n--------------\n")
 print()
@@ -71,15 +71,15 @@ a = np.array([[1,2,3],[4,5,6],[7,8,9]])
 df1 = pd.DataFrame(a)
 df2 = pd.DataFrame(a,index=["l1","l2","l3"],columns=["c1","c2","c3"])
 
-# index，DataFrame类属性。返回数据框所有的行标签。
+# index，DataFrame类的属性。返回数据框所有的行标签。
 print(df1.index,end="\n--------------\n") #不指定行标签时，默认是从0开始的下标
 print(df2.index,end="\n--------------\n") #指定了行标签时，输出指定的行标签
 
-# columns，DataFrame类属性。返回数据框所有的列标签。
+# columns，DataFrame类的属性。返回数据框所有的列标签。
 print(df1.columns,end="\n--------------\n") #不指定列标签时，默认是从0开始的下标
 print(df2.columns,end="\n--------------\n") #指定了列标签时，输出指定的列标签
 
-# values，DataFrame类属性。返回数据框中所有的值(封装在numpy.ndarray中)。
+# values，DataFrame类的属性。返回数据框中所有的值(封装在numpy.ndarray中)。
 print(df1.values,end="\n--------------\n")
 print(df2.values,end="\n--------------\n")
 print()
