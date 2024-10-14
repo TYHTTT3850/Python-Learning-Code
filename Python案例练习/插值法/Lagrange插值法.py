@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def lagrange(u,X,Y): #拉格朗日插值法，u:插值点，X:插值区间，Y:插值区间函数值
+def lagrange(u,X,Y): #拉格朗日插值法，u:插值点，X:已知点，Y:已知点函数值
     L = np.ones(len(X))
     for j in range(len(X)):#得到插值基函数
         for i in range(len(X)):
