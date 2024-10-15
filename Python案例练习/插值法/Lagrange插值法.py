@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 def lagrange(u,X,Y): #拉格朗日插值法，u:插值点，X:已知点，Y:已知点函数值
     L = np.ones(len(X))
