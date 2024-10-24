@@ -1,3 +1,7 @@
+"""
+y = k*x^2*sin(x) + 2*k + cos(x^3) k=1,2,3,4,5,6
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 plt.rc('text', usetex=True)
