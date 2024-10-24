@@ -61,14 +61,15 @@ plt.axis('equal') #'equal'表示设置x轴与y轴使用相同的单位长度
 plt.show()
 
 """--------------------标题、坐标轴标签、简单图例--------------------"""
+plt.rc('text', usetex=True) #设置使用tex字体
 plt.plot(x, np.sin(x))
-plt.title("y = sin(x)")
-plt.xlabel("x")
-plt.ylabel("sin(x)");
+plt.title("$y=sin(x)$") #输入tex语言的公式命令
+plt.xlabel("$x$")
+plt.ylabel("$sin(x)$");
 plt.show()
 
-plt.plot(x, np.sin(x), '-g', label='sin(x)') #这里把线条样式和颜色合并成非关键字参数
-plt.plot(x, np.cos(x), ':b', label='cos(x)')
+plt.plot(x, np.sin(x), '-g', label='$sin(x)$') #这里把线条样式和颜色合并成非关键字参数
+plt.plot(x, np.cos(x), ':b', label='$cos(x)$')
 plt.axis('equal')
 plt.title("sin and cos")
 plt.legend() #使绘制的图例线条样式和颜色与图中的曲线的风格和颜色都保持一致
