@@ -70,7 +70,7 @@ plt.show()
 
 plt.plot(x, np.sin(x), '-g', label='$sin(x)$') #这里把线条样式和颜色合并成非关键字参数
 plt.plot(x, np.cos(x), ':b', label='$cos(x)$')
-plt.axis('equal')
+plt.axis('equal') #确保各个坐标轴的单位长度相等
 plt.title("sin and cos")
 plt.legend() #使绘制的图例线条样式和颜色与图中的曲线的风格和颜色都保持一致
 plt.show()
