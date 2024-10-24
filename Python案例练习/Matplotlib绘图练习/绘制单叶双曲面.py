@@ -30,6 +30,7 @@ surface = ax.plot_surface(x, y, z,
 
 # 绘制Z=0处椭圆参考线
 ax.plot3D(a*np.cos(u),b*np.sin(u),np.zeros_like(u),color='blue')
+ax.scatter(0,b,0,color='red')
 
 # 设置坐标轴标签
 ax.set_xlabel('X')
