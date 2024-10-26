@@ -5,7 +5,12 @@
 
 2、通过 Figure对象的 add_subplot()或 add_axes()方法创建 Axes对象。
    add_subplot()方法通常用于创建常规的网格布局，而 add_axes()方法则可以创建任意位置和大小的 Axes对象。
+   
    add_subplot()方法参数，add_subplot(行数,列数,子图编号)
+       行数：表示子图的总行数。
+       列数：表示子图的总列数。
+       子图编号：表示当前子图在整个布局中的索引位置，从左到右、从上到下依次编号。    
+       子图编号可以合并，如(3,6)表示3号子图和6号子图合并成一个字图，子图编号合并用于绘制不规则子图
        
    add_axes()方法参数,add_axes([left, bottom, width, height])
        left: Axes 左下角的 x 坐标(相对于 Figure 宽度，范围从 0 到 1)
