@@ -28,12 +28,6 @@ fig = plt.figure()
 
 # 2. 添加 Axes 对象
 axe1 = fig.add_axes([0.15, 0.1, 0.8, 0.8]) #数值分别对应[left, bottom, width, height]
-"""
-left: Axes 左下角的 x 坐标(相对于 Figure 宽度，范围从 0 到 1)
-bottom: Axes 左下角的 y 坐标(相对于 Figure 高度，范围从 0 到 1)
-width: Axes 的宽度(相对于 Figure 宽度，范围从 0 到 1)
-height: Axes 的高度(相对于 Figure 高度，范围从 0 到 1)
-"""
 
 # 3. 绘制数据
 x = np.linspace(0, 10, 100)
