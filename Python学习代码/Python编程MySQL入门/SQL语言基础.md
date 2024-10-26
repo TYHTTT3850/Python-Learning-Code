@@ -211,7 +211,7 @@ select id,name from student where id >=4
 select id,name from student where name='jack';
 ```
 
-### 分组(GROUP BY)聚合
+### 分组(GROUP BY)聚合(aggregate)
 
 基础语法：
 
