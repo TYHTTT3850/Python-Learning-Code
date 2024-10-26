@@ -36,7 +36,7 @@ axe3.plot(x, x*np.sin(x),linestyle='--')
 axe3.set_xlabel('$x$')
 axe3.set_ylabel('$y$',rotation=0)
 
-# 4号图
+# 4号子图
 axe4 = fig.add_subplot(2,2,4)
 axe4.plot(x, np.sin(x**2),linestyle='--')
 axe4.set_xlabel('$x$')
