@@ -76,9 +76,3 @@ axe4_5.set_ylabel('$y$',rotation=0)
 fig1.suptitle("2×3不规则子图",fontproperties='SimSun')
 fig1.tight_layout()
 fig1.savefig('2×3不规则子图.pdf',format='pdf')
-
-# 图片整体设置项
-plt.subplots_adjust(hspace=0.5) #调整子图间的垂直方向间距
-plt.subplots_adjust(wspace=0.5) #调整子图间的水平方向间距
-fig.suptitle("规则子图绘制",fontproperties='SimSun') #设置图片总标题并指定中文字体为宋体，否则出错
-fig.savefig('规则子图.pdf', format='pdf')
