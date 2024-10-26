@@ -35,7 +35,6 @@ Month_Sales = a[a.year==2012].groupby(by='month').aggregate({'Sales': 'sum'})
 .groupby(by='month')：对筛选后的数据框按month列进行分组。即相同月份的数据会被放在同一组中。
 .aggregate({'Sales': np.sum})：对每个月的Sales列进行聚合计算。这里使用np.sum来计算每个月的总销售额。
 """
-#axe2.plot(Month_Sales.loc['month'],Month_Sales.loc['Sales'])
 axe2.plot(np.arange(1, 13), Month_Sales['Sales'])
 axe2.set_title("2012年各月销售趋势")
 
