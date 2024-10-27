@@ -33,15 +33,21 @@ axe2 = fig.add_subplot(2,3,2)
 Month_Sales = a[a.year==2012].groupby(by='month').aggregate({'Sales': 'sum'})
 """
 .groupby(by='month')：对筛选后的数据框按month列进行分组。即相同月份的数据会被放在同一组中。
-.aggregate({'Sales': np.sum})：对每个月的Sales列进行聚合计算。这里使用np.sum来计算每个月的总销售额。
+.aggregate({'Sales': np.sum})：对每个月的Sales列进行聚合计算。这里使用sum求和计算每个月的总销售额。
 """
 axe2.plot(np.arange(1, 13), Month_Sales['Sales'])
 axe2.set_title("2012年各月销售趋势")
 
 axe3 = fig.add_subplot(2,3,(3,6))
 cost = a['Trans_Cost'].groupby(by = a['Transport'])
+"""
+GroupBy对象cost并不直接包含Trans_Cost的具体数据，它是一个按Transport列分组的“视图”，知道每个分组对应的索引和位置
+"""
 ts = list(cost.groups.keys())
 d1 = cost.get_group('大卡')
+"""
+通过get_group()方法，可以根据从cost中的分组规则访问到原始数据框a中相应的Trans_Cost列数据。
+"""
 d2 = cost.get_group('火车')
 d3 = cost.get_group('空运')
 axe3.boxplot([d1, d2, d3])
