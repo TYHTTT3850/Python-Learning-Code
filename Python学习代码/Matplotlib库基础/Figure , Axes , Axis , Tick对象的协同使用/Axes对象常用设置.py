@@ -1,5 +1,5 @@
 """
-Axes.spines详解
+Axes.spines详解(3D图形没有spines)
 spines指的是围绕绘图区域的边界线,也就是图表的"边框 "。一个典型的图表有四条边框线:
 'top' - 顶部边框
 'bottom' - 底部边框(通常是 x 轴所在位置)
