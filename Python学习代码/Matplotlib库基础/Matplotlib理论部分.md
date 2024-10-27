@@ -1,8 +1,6 @@
 # Matplotlib理论部分
-
-## Figure对象
-
 在 Matplotlib 中，Figure 和 Axes 对象是图形绘制的核心组成部分。
+## Figure对象
 
 Figure 对象是整个绘图的顶层容器，是 Matplotlib 中所有绘图操作的基础，所有的绘图元素和操作都是围绕Figure对象进行的。
 
