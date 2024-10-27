@@ -2,7 +2,7 @@
 
 Matplotlib 提出了Object Container(对象容器)的概念，主要有Figure，Axes，Axis，Tick。Figure 和 Axes 对象是图形绘制的核心组成部分。
 
-Figure负责图像大小，位置等操作；Axes负责坐标轴位置，绘图等操作；Axis负责坐标轴的设置等操作；Tick负责格式化刻度的样式等操作
+Figure负责图像大小，位置等操作；Axes负责坐标轴位置，绘图等操作；Axis负责坐标轴的设置等操作；Tick负责格式化刻度的样式等操作。
 
 ## Figure对象
 
