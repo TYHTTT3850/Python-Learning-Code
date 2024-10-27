@@ -18,8 +18,8 @@ ax.xaxis.set_major_locator(plt.MultipleLocator(2))   #每2个单位长度一个�
 ax.xaxis.set_minor_locator(plt.MultipleLocator(0.5)) #每0.5个单位长度次刻度
 
 # 添加并设置y轴主刻度和次刻度之间的间距
-ax.yaxis.set_major_locator(plt.MultipleLocator(0.25))
-ax.yaxis.set_minor_locator(plt.MultipleLocator(0.125))  # 次刻度每0.5个单位
+ax.yaxis.set_major_locator(plt.MultipleLocator(0.25)) #每0.25个单位长度一个主刻度
+ax.yaxis.set_minor_locator(plt.MultipleLocator(0.125)) #每0.125个单位长度一个次刻度 
 
 """--------------------x,y坐标轴--------------------"""
 # x轴设置
