@@ -1,5 +1,6 @@
 """
-GridSpec允许用户在一个图形中定义一个网格，并在这个网格中自由地放置多个子图(axes)
+GridSpec允许用户在一个图形中定义一个网格，并在这个网格中自由地放置多个子图(axes)。
+相比于Figure对象的add_subplot()方法，Gridspec更加灵活。
 """
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
