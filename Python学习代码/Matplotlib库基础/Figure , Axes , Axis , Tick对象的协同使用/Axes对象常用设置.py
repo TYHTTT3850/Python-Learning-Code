@@ -15,18 +15,19 @@ ax = fig.add_subplot(111)  # 添加一个子图
 x = np.linspace(0, 2*np.pi, 100)
 ax.plot(x, np.sin(x),label='sin(x)')
 
-# 设置子图的图例
+"""--------------------子图图例设置--------------------"""
 ax.legend(loc='best') #自动选择最好的位置
 
-# 设置子图标题和轴标签
+"""--------------------子图标题和轴标签设置--------------------"""
 ax.set_title('Subplot Title')
 ax.set_xlabel('X',loc='right') #标签位置设置为最右边
 ax.set_ylabel('Y',rotation=0,loc='top') #标签位置设置为最上边
 
-# 设置子图的 x 和 y 轴的范围
+"""--------------------子图轴范围设置--------------------"""
 ax.set_xlim(0,2*np.pi)
 ax.set_ylim(-1, 1)
 
+"""--------------------子图边框线设置--------------------"""
 # 将坐标轴移动到原点(0,0)
 ax.spines['bottom'].set_position('zero') #bottom <——> x 轴
 ax.spines['left'].set_position('zero') #left <——> y 轴
@@ -43,10 +44,10 @@ ax.spines['bottom'].set_linestyle(':')   #虚线
 ax.spines['left'].set_color('green')
 ax.spines['bottom'].set_color('blue')
 
-# 子图显示网格
+"""--------------------子图网格线设置--------------------"""
 ax.grid(True, linestyle='--', alpha=0.7)
 
-# 设置子图背景色
+"""--------------------子图背景色设置--------------------"""
 ax.set_facecolor('#f0f0f0')
 
 plt.show()
