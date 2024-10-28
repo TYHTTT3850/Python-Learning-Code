@@ -6,7 +6,7 @@ def Trapezoidal_integral(f,a,b,eps):#f:积分函数，a:积分下限，b:积分�
     T2 = 0
 
     #从分为2段区间的情况开始
-    for i in range(1, int(1 / eps)):
+    for i in range(1, int(1 / eps)+1):
         n = 2 ** i  #表示分段区间数
         h = (b - a) / n  #表示分段区间间隔
 
@@ -18,6 +18,8 @@ def Trapezoidal_integral(f,a,b,eps):#f:积分函数，a:积分下限，b:积分�
         if np.abs(T2 - T1) < eps:
             return n, T2
             break #返回后退出循环
+        elif i == int(1 / eps): #在最大分段区间数的情况下仍无满足要求的近似值，则返回此时的近似值
+            return n, T2
         else:
             T1 = T2 #T2的值保存至T1
             T2 = 0 #重置T2的值
@@ -30,6 +32,6 @@ def f(x):
     else:
         return np.sin(x)/x
 
-eps = 0.001
+eps = 0.000001
 n, I = Trapezoidal_integral(f,0,1,eps)
 print(n,I)
