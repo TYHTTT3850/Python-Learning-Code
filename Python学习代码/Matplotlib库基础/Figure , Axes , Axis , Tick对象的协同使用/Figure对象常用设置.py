@@ -21,7 +21,7 @@ fig.subplots_adjust(
 )
 fig.tight_layout() #自动调整布局
 
-# 保存设置
+# 图片存储
 fig.savefig('Figure对象常用设置.pdf', format='pdf',
     bbox_inches='tight',  #自动调整边距
     transparent=True   #透明背景
