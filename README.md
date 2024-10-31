@@ -61,5 +61,3 @@ pip install -U pip
 框架Framework：Python库的集合
 
 模块⊂包⊂库⊂框架
-
-$P(x)$
