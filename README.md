@@ -61,5 +61,3 @@ pip install -U pip
 框架Framework：Python库的集合
 
 模块⊂包⊂库⊂框架
-
-This sentence uses `$` delimiters to show math inline:  $`\sqrt{3x-1}+(1+x)^2`$
