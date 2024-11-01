@@ -43,12 +43,12 @@ x_span = np.linspace(0,2,101)
 
 # 逐级泰勒展开并绘图
 for k in range(3,8,2):
-    taylor = y.series(x,0,k)
+    taylor = y.series(x,0,k) #等价于series(y,x,0,k)
     """.series(展开变量,展开位置,关于x的k次的高阶无穷小)"""
     taylor_removeO = taylor.removeO() #.removeO()表示去除余项
     taylor_lambdify = lambdify(x,taylor_removeO,'numpy')
     ax1.plot(x_span,taylor_lambdify(x_span))
-    print(taylor) #等价于series(y,x,0,k)
+    print(taylor) 
     print(taylor_removeO)
 ax1.plot(x_span,y_lambdify(x_span))
 
