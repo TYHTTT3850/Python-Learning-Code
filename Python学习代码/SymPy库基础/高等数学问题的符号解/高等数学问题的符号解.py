@@ -1,4 +1,3 @@
-from matplotlib.pyplot import xlabel
 from mpmath import taylor
 from sympy import *
 import matplotlib.pyplot as plt
