@@ -106,4 +106,11 @@ eq2 = diff(y(x),x,2)-5*diff(y(x),x)+6*y(x)-x*exp(2*x) #非齐次方程
 # 使用dsolve()方法
 print("齐次方程的解为：",dsolve(eq1,y(x)))
 print("非齐次方程的解为：",dsolve(eq1,y(x)))
+
+# 初值问题：eq1,{y(0)=1,y'(0)=0}
+print("初值问题的解为：",dsolve(eq1,y(x),ics={y(0):1,diff(y(x),x).subs(x,0):0}))
+
+# 边值问题：eq2,{y(0)=1,y(2)=0}
+print("边值问题的解为：",dsolve(eq2,y(x),ics={y(0):1,y(2):0}))
+
 print()
