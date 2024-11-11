@@ -13,7 +13,8 @@ def Romberg(f,a,b,eps):
         T[k,0] = 1/2 * T[k-1,0]
         for j in range(1, n, 2):
             T[k,0] += (b-a)/n * f(a + j*(b-a)/n)
-
+        
+        # 外推加速公式
         for i in range(1, k+1):
             T[k,i] = (4**i * T[k,i-1] - T[k-1,i-1]) / (4**i - 1)
 
