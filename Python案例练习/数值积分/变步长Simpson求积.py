@@ -1,7 +1,7 @@
 import numpy as np
 
 def Simpson_integral(f,a,b,eps):#f:积分函数，a:积分下限，b:积分上限，eps:精度控制
-    #初始化T1和T2
+    #初始化I1和I2
     I1 = (b-a) * (f(a) + 4*f(a/2 + b/2) + f(b)) / 6
     I2 = 0
 
