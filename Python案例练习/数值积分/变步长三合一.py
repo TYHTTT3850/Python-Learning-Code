@@ -12,7 +12,7 @@ def Cotes(f,a,b):
     I = (b-a) * (7*f(a) + 32*f(3*a/4 + b/4) + 12*f(a/2 + b/2) + 32*f(a/4 + 3*b/4) +7*f(b)) / 90
     return I
 
-def Numeric_integral(f,a,b,eps,method):#f:积分函数，a:积分下限，b:积分上限，eps:精度控制
+def Numeric_integral(f,a,b,eps,method):#f:积分函数，a:积分下限，b:积分上限，eps:精度控制 method:求积方法
     #初始化I1和I2
     I1 = method(f,a,b)
     I2 = 0
