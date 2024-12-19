@@ -10,7 +10,7 @@ print(set1)
 set1.remove(0)
 print(set1)
 
-# pop方法，删除第一个元素，返回删除元素值。集合名.pop()
+# pop方法，删除一个随机的元素，返回删除元素值。集合名.pop()
 set3 = {"a","b","c"}
 pop_element = set3.pop()
 print(pop_element)
