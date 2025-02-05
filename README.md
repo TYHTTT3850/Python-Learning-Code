@@ -9,25 +9,25 @@ pip list
  查看指定库的完整安装路径。
 
 ```cmd
-pip show 库名
+pip show <库名>
 ```
 
 自动安装最新版的库
 
 ```cmd
-pip install 库名
+pip install <库名>
 ```
 
 安装指定版本的库。
 
 ```cmd
-pip install 库名==指定版本号
+pip install <库名>==<版本号>
 ```
 
 卸载指定的库
 
 ```cmd
-pip uninstall 库名   
+pip uninstall <库名>   
 ```
 
 查看可以升级的库
@@ -39,7 +39,7 @@ pip list -o
 升级指定库
 
 ```cmd
-pip install -U 库名
+pip install -U <库名>
 ```
 
 
@@ -78,7 +78,7 @@ Python 自带 Python 启动器，在 Windows 操作系统上提供了一种方�
 
 ```cmd
 
-py -<版本> -m pip install <包名>
+py -<版本> -m pip install <库名>
 
 ```
 
@@ -94,7 +94,7 @@ py -3.12 -m pip install numpy
 
 ```cmd
 
-py -<版本> -m pip install <包名>[==<版本号>] [-i <镜像源地址>]
+py -<版本> -m pip install <库名>[==<版本号>] [-i <镜像源地址>]
 
 ```
 
